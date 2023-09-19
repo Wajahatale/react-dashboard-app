@@ -10,6 +10,10 @@ function LoginPage() {
 
   return (
     <div className="auth-container">
+      <div className="left-container">
+        <h1 className="h1">Welcome to MoCal!</h1>
+        <p>Get Your First Month Free. Sign Up Now!</p>
+      </div>
       <div className="auth-grid">
         <div className="auth-form">
           <h2>{isLogin ? "Log In" : "Sign Up"}</h2>

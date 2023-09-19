@@ -1,21 +1,47 @@
+@import "./global.scss";
 .auth-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f8f9fa;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  height: 100%;
+  // background-color: #f8f9fa;
+  background-image: url("../../assets/images/signupbg.png");
+  // background-size: cover; /* Optional: Adjust the sizing of the background image */
+  // background-repeat: no-repeat;
+
+  // background: transparent url("../../assets/images/signupbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.left-container {
+  text-align: left;
+  // font: normal normal 900 61px/66px Avenir;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+.h1 {
+  font-size: 61px;
+  font-family: Avenir;
+  color: $light-purple;
+  letter-spacing: 0px;
+  opacity: 1;
 }
 
 .auth-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 600px;
-  width: 100%;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  // display: grid;
+  width: 568px;
+  height: 647px;
+  margin-top: 216px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px #00000029;
+  border-radius: 26px;
+  opacity: 1;
+
+  // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .auth-form {
