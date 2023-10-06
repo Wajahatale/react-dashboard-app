@@ -54,7 +54,7 @@
 }
 
 .auth-form input {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -62,7 +62,7 @@
 }
 
 .auth-form button {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background-color: #007bff;
   color: #fff;
@@ -76,6 +76,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .google-btn {
@@ -85,6 +86,8 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  padding: 10px;
+  width: 50%;
 }
 
 .microsoft-btn {
@@ -93,6 +96,8 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  padding: 10px;
+  width: 50%;
 }
 
 .auth-form p {

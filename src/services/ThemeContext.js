@@ -6,9 +6,13 @@ export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    // Call the API to update the theme here
+    if (theme === "light") {
+      setTheme("dark");
+    } else if (theme === "dark") {
+      setTheme("white");
+    } else if (theme === "white") {
+      setTheme("light");
+    }
   };
 
   return (

@@ -1,0 +1,70 @@
+/* Dashboard.scss */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.dashboard-card {
+  width: 70%;
+  // background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  height: 600px;
+}
+
+.dashboard-menu {
+  width: 15%;
+  background-color: #efefef;
+  color: #000000;
+  padding: 20px;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 15px;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .active {
+    background-color: #f7f7f7;
+  }
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.dropdown-section {
+  padding-left: 35px;
+  width: 272px;
+}
+.dropdown {
+  height: 35px;
+  width: 100%;
+
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 0.20000000298023224px solid #707070;
+  opacity: 1;
+}
+
+.theme-toggle {
+  width: 500px;
+  justify-content: space-between;
+}
