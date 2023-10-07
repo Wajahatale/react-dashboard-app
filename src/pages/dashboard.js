@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/common/Navbar";
 import "../assets/scss/Dashboard.scss";
 import { useTheme } from "../services/ThemeContext";
@@ -14,6 +14,8 @@ function Dashboard() {
   const [selectedDark, setSelectedDark] = useState(theme === "dark");
   const [selectedWhite, setSelectedWhite] = useState(theme === "white");
 
+  const navigate = useNavigate();
+
   const handleTabChange = (tab) => {
     setSelectedTab(tab);
   };
@@ -24,6 +26,11 @@ function Dashboard() {
 
   const handleFontSizeChange = (e) => {
     setSelectedFontSize(e.target.value);
+  };
+
+  const logout = () => {
+    localStorage.clear();
+    navigate("/");
   };
 
   const handleThemeChange = (theme) => {
@@ -47,7 +54,7 @@ function Dashboard() {
 
   return (
     <div className={`dashboard-container ${themeClass}`}>
-      <Navbar />
+      <Navbar onLogout={logout} />
       <div className="dashboard-card">
         <div className="dashboard-menu">
           <h2>Settings</h2>
